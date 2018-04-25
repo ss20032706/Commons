@@ -1,0 +1,81 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="mydialog_style" parent="android:style/Theme.Dialog">
+        <!--背景颜色和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊,也就是弹窗之外的区域是否变色-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="up_to_down_anim_style">
+        <item name="android:windowEnterAnimation">@anim/push_top_in</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/push_top_out</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="left_to_right_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_left_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_left_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="right_to_left_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_right_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_right_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="mypopwindow_left_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_left_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_left_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="mypopwindow_right_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_right_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_right_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="mypopwindow_top_anim_style">
+        <item name="android:windowEnterAnimation">@anim/push_top_in2</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/push_top_out2</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="mypopwindow_bottom_anim_style">
+        <item name="android:windowEnterAnimation">@anim/from_bottom_in</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/to_bottom_out</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/from_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/to_bottom_out</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+</resources>

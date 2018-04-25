@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showSelf() {
+            alert("我来自网页")
+        }
+ function showCameraInfo(str) {
+            alert(str)
+        }
+        //调用android程序
+         function getVideo() {
+   Android.callVideo();
+        }
+
+         //调用android程序
+         function getCamera() {
+   Android.callCamera();
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+<input type="button" value="我是网页上按钮"  onclick="showSelf()">
+
+<input type="button" value="调用原生程序"  onclick="callAndroid()">
+</body>
+</html>

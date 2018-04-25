@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">梦兰安卓样例</string>
+
+    <!--全局-->
+    <string name="global_text_black_string">#454449</string>
+    <string name="global_text_gray_string">#797b87</string>
+
+    <!--首页-->
+    <string name="main_tab1">UI相关</string>
+    <string name="main_tab2">功能</string>
+    <string name="main_tab3">框架</string>
+    <string name="main_tab4">数据</string>
+    <string name="main_tab_text_blue">#4790e2</string>
+
+    <!--fg1>DoubleListActivity-->
+    <string name="confine_tv1">双选控件</string>
+
+    <!--AutoTextActivity-->
+    <string name="input_hint">text</string>
+    <string name="label_normal">Normal:</string>
+    <string name="label_autofit">Autofit:</string>
+
+    <!--ExpandableTvActivity-->
+    <string name="expandabletv_text">梦想e卡资费为19元/月，套餐内包含2GB国内流量，前六个月每月加送100分钟国内通话，工行指定APP专属流量免费，当月流量40GB封顶，超出套餐外的国内流量收费标准是10元/GB；国内语音、短彩信均是0.1元/分钟/条，赠来电显示、无漫游费用。
+大e卡的资费为89元/月，涵盖6GB国内流量，600分钟国内语音。工行指定APP专属流量免费，当月流量40GB封顶，超出套餐外的国内流量收费标准是10元/GB；国内语音、短彩信均是0.1元/分钟/条，赠来电显示、无漫游费用。</string>
+
+    <!--PullOutViewActivity-->
+    <string name="search_item_title1">法定代表人：</string>
+    <string name="search_item_title2">行政区：</string>
+    <string name="search_item_title3">所属工业集中区：</string>
+    <string name="search_item_title4">地址：</string>
+    <string name="ind_detail_toptitle">企业详情</string>
+    <string name="ind_detail_title1">负责人：</string>
+    <string name="ind_detail_title2">环保负责人：</string>
+    <string name="ind_detail_title3">电话：</string>
+    <string name="ind_detail_title4">常用信息</string>
+    <string name="ind_detail_warn">绑定账号后能查看以下更多数据</string>
+    <string name="ind_detail_bt_bund">绑定账号</string>
+    <string name="ind_detail_btnhide">收起企业信息</string>
+    <string name="ind_detail_btnshow">查看企业信息</string>
+
+    <!--xutils相关-->
+    <string name="action_settings">Settings</string>
+    <string name="remove">移除</string>
+    <string name="stop">停止</string>
+    <string name="start">开始下载</string>
+    <string name="test_download_url">http://dl.bintray.com/wyouflf/maven/org/xutils/xutils/3.5.0/xutils-3.5.0.aar</string>
+
+    <!--各种Toast-->
+    <string name="normal_toast_with_icon">NORMAL TOAST (WITH ICON)</string>
+    <string name="normal_toast_without_icon">NORMAL TOAST (WITHOUT ICON)</string>
+    <string name="warning_toast">WARNING TOAST</string>
+    <string name="info_toast">INFO TOAST</string>
+    <string name="info_toast_with_formatting">INFO TOAST WITH FORMATTING</string>
+    <string name="error_toast">ERROR TOAST</string>
+    <string name="success_toast">SUCCESS TOAST</string>
+    <string name="custom_configuration">CUSTOM CONFIGURATION</string>
+
+    <string name="select_dialog_ok">确定</string>
+    <string name="select_dialog_cancel">取消</string>
+</resources>

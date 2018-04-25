@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_blue_bright"
+                android:id="@+id/tlTop"
+                android:layout_height="46dp"
+    >
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="35dp"
+        android:layout_height="46dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="15dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_white_back_selector"/>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="35dp"
+        android:layout_height="46dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="5dp"
+        android:visibility="gone"
+        android:paddingStart="10dp"
+        android:layout_toEndOf="@+id/iv_back"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_web_close_selector"/>
+
+    <ImageView
+        android:id="@+id/ivMore"
+        android:layout_width="35dp"
+        android:layout_height="46dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_detail_more_selector"/>
+
+    <TextView
+        android:id="@+id/tvTitleTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@+id/ivMore"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_toEndOf="@id/iv_close"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

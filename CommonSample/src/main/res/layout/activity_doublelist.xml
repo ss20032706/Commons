@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/status_bar_bg_blue"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/btn_white_back_selector"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_input_bg_gray">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_search_edittext_bg_white"
+                android:drawablePadding="7dp"
+                android:drawableStart="@mipmap/ic_search"
+                android:focusable="true"
+                android:hint="请输入搜索条件"
+                android:imeActionLabel="搜索"
+                android:imeOptions="actionSend"
+                android:maxLines="1"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/bt_search_clear"
+                android:visibility="gone"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:padding="7dp"
+                android:src="@mipmap/market_delete"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll_search"
+        android:background="@color/cut_line"/>
+
+    <LinearLayout
+        android:id="@+id/llDouble"
+        android:layout_below="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvConfine1"
+            style="@style/tv_confine"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/confine_tv1"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ivConfine1"
+            style="@style/iv_confine"
+            android:src="@mipmap/btn_pulldown"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/v_line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/llDouble"
+        android:background="@color/cut_line"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_bg_blue">#167fd2</color>
+
+    <color name="text_bg_blue">#0070C0</color>
+    <color name="text_bg_blue_press">#2693FF</color>
+
+    <color name="text_black">#454449</color>
+    <color name="text_gray">#797b87</color>
+
+    <color name="threelist_item_devide_line_gray">#e3e3e3</color>
+    <color name="threelist_seconde_list_bg">#f2f2f2</color>
+
+    <!--二维码相关-->
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+
+    <!--仿小米日历-->
+    <color name="solarTextColor">#000000</color>
+    <color name="lunarTextColor">#B2B2B2</color>
+    <color name="hintColor">#999999</color>
+    <color name="selectCircleColor">#39AF81</color>
+    <color name="holidayColor">#39AF81</color>
+    <color name="workdayColor">#EC7230</color>
+    <color name="pointColor">#B2B2B2</color>
+    <color name="white">#ffffff</color>
+
+
+    <!--退出app的对话框-->
+    <color name="gray">#C0C0C0</color>
+    <color name="darkgray">#7F7F7F</color>
+    <color name="black">#ff000000</color>
+
+    <!--wheelchoose-->
+    <color name="province_line_border">#2497ed</color>
+</resources>

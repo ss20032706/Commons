@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.lzy.net:okgo:3.0.4'
+
+    //permission4相关
+    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.1-processor'
+    compile 'com.github.jokermonn:permissions4m:2.1.1-lib'
+    compile files('libs/butterknife-7.0.1.jar')
+
+
+    //下拉头部放大相关
+    compile 'com.lzy.widget:view-core:0.2.2'
+
+    //引导页和各种banner相关
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'com.android.support:support-v4:25.1.0'
+
+
+    // 以下是PhotoView 图片浏览缩放控件
+    compile 'com.bm.photoview:library:1.4.1'
+
+    //AutoFitTextView自动根据给定的界限缩小字体
+    compile 'me.grantland:autofittextview:0.2.+'
+
+    //SwitchButton相关
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+
+    //可以下拉收缩的Textview
+    compile 'com.ms-square:expandableTextView:0.1.4'
+
+/**
+ SweetAlertDialog，仿IOS的对话框,还需要做如下2步设置才能正常用
+ 1.在manifest标签中加入：
+ xmlns:tools="http://schemas.android.com/tools"
+ 2.在application中加入
+ tools:replace="icon"
+ */
+    //iosdialog
+    compile 'cn.pedant.sweetalert:library:1.3'
+
+    //xUtils:包含了orm, http(s), image, view注解
+    compile 'org.xutils:xutils:3.5.0'
+
+    //DropDownMenu单选下拉框
+    compile 'com.github.dongjunkun:DropDownMenu:1.0.4'
+
+    //RoundedImageView：圆形imageview
+    compile 'com.makeramen:roundedimageview:2.3.0'
+
+    //各种toast
+    compile 'com.github.GrenderG:Toasty:1.2.5'
+
+    //二维码扫描
+    compile files('libs/zxing.jar')
+
+
+//    //仿小米日历
+//    compile 'com.necer.ncalendar:ncalendar:2.4.4'
+    compile 'joda-time:joda-time:2.9.9'
+
+    //有弹力效果的抽屉菜单。
+    compile 'com.facebook.rebound:rebound:0.3.8'
+}

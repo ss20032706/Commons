@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "baidumapsdk.demo1"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionName "1.0"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+
+    }
+
+    signingConfigs {
+        debug {
+            storeFile project.rootProject.file('debug.keystore')
+        }
+        releaseConfig {
+            keyAlias '一企一档'
+            keyPassword 'sckj.123'
+            storeFile project.rootProject.file('release.jks')
+            storePassword 'sckj.123'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+//            jniLibs.srcDir 'libs'
+
+//            res.srcDirs = [
+//                    'src/main/res',
+//                    'src/main/res/layouts/home',
+//                    'src/main/res/layouts/login',
+//                    'src/main/res/layouts/check'
+//            ]
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile project(':commonlibrary')
+        compile 'com.github.vondear:RxTools:v1.7.6'
+    compile project(':shvideolibrary')
+}

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+    <cc.shencai.commonlibrary.widgets.TopFloatScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="顶部信息\n顶部信息\n顶部信息\n顶部信息"
+                    android:textSize="40dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/search02"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:text="我是搜索框"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:padding="5dip"
+                    android:background="@android:color/black"
+                    android:singleLine="true"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="15dip" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </cc.shencai.commonlibrary.widgets.TopFloatScrollView>
+
+    <LinearLayout
+        android:id="@+id/search01"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

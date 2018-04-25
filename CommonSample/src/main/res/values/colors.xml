@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0433ff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--全局-->
+    <color name="global_text_black">#454449</color>
+    <color name="global_text_gray">#797b87</color>
+    <color name="global_item_devider">#ffe8e8e8</color>
+
+    <!--首页-->
+    <color name="main_tab_text_blue">#4790e2</color>
+
+    <!--fg1>DoubleListActivity-->
+    <color name="cut_line">#F2F2F2</color>
+
+    <!--图片选择相关-->
+    <color name="blue">#33b5e5</color>
+
+<!--AutoDisplayCenterActivity-->
+    <color name="detail_tag_stroke">#5cb4e9</color>
+    <color name="detail_tag_solid">#45a9e7</color>
+</resources>

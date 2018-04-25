@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="以下是谷歌推荐的RoundedImageView，有很大的扩展性，具体可参考https://github.com/vinc3m1/RoundedImageView"
+        android:layout_height="wrap_content"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/user_image"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/pullzoom_top"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:text="以下是第三方自定义的CircleImageView，只能显示圆形"
+        android:layout_height="wrap_content"/>
+    <cc.shencai.commonlibrary.widgets.CircleImageView
+        android:layout_width="100dp"
+        android:src="@mipmap/pullzoom_top"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="dialog_loading">正在加载，请稍后</string>
+
+    <string name="three_list_text_color_gray">#666666</string>
+    <string name="three_list_chosen_text_color_blue">#0070C0</string>
+
+    <string name="monitor_choose_title1">监测点类型</string>
+    <string name="monitor_choose_title2">监测点位</string>
+    <string name="monitor_choose_title3">监测项目</string>
+
+
+    <!--仿小米日历-->
+    <string name="illegal_date">日期不在许可范围内!</string>
+    <string name="range_date">日期范围不合法!</string>
+
+    <!--退出app的对话框-->
+    <string name="tv_logout">注销登录</string>
+    <string name="logout">注销</string>
+    <string name="isSureToLogout">确定注销吗？</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+</resources>

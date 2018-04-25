@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <ImageView
+        android:id="@+id/ivStatusBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@mipmap/status_bar_bg"/>
+
+    <include layout="@layout/view_epsc_top"
+             android:layout_width="match_parent"
+             android:layout_below="@+id/ivStatusBar"
+             android:layout_height="46dp"
+
+        />
+
+
+    <include
+        android:id="@+id/layout_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/unit_voice_record"
+        />
+
+    <include
+        android:id="@+id/layout_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/unit_voice_play"
+        />
+
+    <Button
+        android:id="@+id/button_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="点击录音" />
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_ok"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:text="播放录音"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="确定上传"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
